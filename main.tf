@@ -1,22 +1,3 @@
-terraform {
-  required_providers {
-    proxmox = {
-      source  = "telmate/proxmox"
-      version = "2.9.3"
-    }
-  }
-}
-
-variable "pm_api_token_id" {}
-variable "pm_api_token_secret" {}
-variable "pm_api_url" {}
-
-provider "proxmox" {
-  pm_api_token_id     = var.pm_api_token_id
-  pm_api_token_secret = var.pm_api_token_secret
-  pm_api_url          = var.pm_api_url
-}
-
 variable "name" {
   default = "ubuntu-server"
 }
