@@ -42,7 +42,7 @@ variable "password" {
 }
 variable "sshkeys" {}
 
-resource "proxmox_vm_qemu" "ubuntu-server" {
+resource "proxmox_vm_qemu" "vm" {
   name        = var.name
   target_node = var.target_node
 
