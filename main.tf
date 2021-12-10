@@ -28,7 +28,9 @@ variable "storage_size" {
 }
 
 variable "user" {}
-variable "password" {}
+variable "password" {
+  sensitive = true
+}
 variable "sshkeys" {}
 
 resource "proxmox_vm_qemu" "ubuntu-server" {
